@@ -21,8 +21,6 @@
         <a href="https://github.com/SebSpr/nz"><img src="images/user.jpg" alt="Andreas Hofer mit Hut"></a>
     </header>
     <main>
-
-
         <article>
             <h1>Das Passeiertal</h1>
             <h1>St. Leonhard im Passeier</h1>
@@ -70,6 +68,10 @@
                 </figure>
             </h3>
 
+            <h3>Übersichtskarte</h3>
+            <div id="map" style="width: 90%;height: 600;"></div>
+
+
             <h3>Links</h3>
             <ul>
                 <li> <a
@@ -79,7 +81,7 @@
                 <li> <a href="https://www.meranerland.org/de/meraner-land/passeiertal/">Urlaub im Passeiertal</a></li>
             </ul>
         </article>
-
+    </main>
         <footer>
             <nav>
                 <a href="https://marcfk.github.io/top">vorherige Top Location</a>
@@ -87,16 +89,11 @@
                 <a href="https://marcelboehm.github.io/top">nächste Top Location</a>
             </nav>
         </footer>
-    </main>
 
 
-
-
-
-
-
-
-    </main>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+    </script>
 </body>
 
 
