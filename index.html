@@ -82,18 +82,24 @@
             </ul>
         </article>
     </main>
-        <footer>
-            <nav>
-                <a href="https://marcfk.github.io/top">vorherige Top Location</a>
-                <a href="https://SebSpr.github.io/top">diese Top Location</a>
-                <a href="https://marcelboehm.github.io/top">nächste Top Location</a>
-            </nav>
-        </footer>
+    <footer>
+        <nav>
+            <a href="https://marcfk.github.io/top">vorherige Top Location</a>
+            <a href="https://SebSpr.github.io/top">diese Top Location</a>
+            <a href="https://marcelboehm.github.io/top">nächste Top Location</a>
+        </nav>
+    </footer>
 
 
     <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
-    </script>
+        var map = L.map('map').setView([46.816944, 11.250278], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([46.816944, 11.250278]).addTo(map);
+</script>
 </body>
 
 
